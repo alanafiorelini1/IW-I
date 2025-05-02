@@ -1,0 +1,18 @@
+<html>
+
+ <head>
+
+     <title> lamp </title>
+
+
+ </head>
+
+ <body>
+ olá  <a href="next.html">pessoa</a>
+
+ <br>
+ <img src="imagens/lamp.jpg">
+
+ </body>
+
+ </html>
