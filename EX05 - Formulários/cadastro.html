@@ -1,6 +1,78 @@
 <html>
     <head>
         <title>Cadastro</title>
+
+        <style>
+            /*o asterisco serve para aplicar em todos elementos da página*/
+            *{
+              box-sizing: border-box; /*garante que a borda e o padding estejam alinhados*/
+              padding: 0; /*remove o preenchimento padrao de todos elementos*/
+              margin: 0; /*remove a margem padrao*/
+            }
+            /*estilos para o HTML bruto e o body*/
+            html, body{
+                width: 100%; /*faz com que o HTML ocupe a largura da página inteira*/
+                height: 100%; /*faz com que o HTML ocupe a altura da página inteira*/
+                font-family: Arial, sans-serif; /*muda a fonte da página*/
+                background-color: #f0f2f5; /*muda a cor do fundo da página para branco*/
+            }
+            /*estilo para classe form-fundo*/
+            .form-fundo{
+                width: 100%; /*faz que com ocupe a largura total de seu pai*/
+                height: 100%; /*faz com que ocupe a altura total de seu pai*/
+                display: flex; /*habilita flexbox para layout*/
+                justify-content: center; /*centraliza os itens flex horizontalmente dentro do container*/
+                align-items: center; /*centraliza os itens flex verticalmente dentro do container*/
+            }
+            .form-login, .form-cadastro{
+                background-color: #fff; /*define a cor branca para o formulário do cadastro*/
+                padding: 20px; /*adiciona 20 pixels de preenchimento no formulário*/
+                border-radius: 10px; /*arredonda os cantos do formulário por 10 centimetros*/
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /*adiciona uma sombra sútil a caixa do formulário, de 15px e preto opaco 10%*/
+                width: 100%; /*faz com que o formulário ocupe 100% de seu pai*/
+                max-width: 400px; /*limita a largura do formulário para 400px*/
+            }
+            /*estilo para cabeçalho nível 2*/
+            h2{
+                text-align: center; /*alinha o texto para o centro da página*/
+                margin-bottom: 25px; /*adiciona uma margem inferior de 25 pixels abaixo dos elementos h2*/
+            }
+            /*estilo para os elementos de label*/
+            label{
+                font-weight: bold; /*torna as labels em negrito*/
+                display: block; /*faz com que as labels sejam elementos de blocos ocupando largura total e empilhando verticalmente*/
+                margin-top: 10px; /*adiciona uma margem superior de 10 pixels acima das labels*/
+            }
+            /*estilo para elemento input como 'email' ou 'password'*/
+            input{
+                width: 100%; /*faz com que os campos de input ocupem 100% da largura de seu pai*/
+                padding: 12px; /*adiciona 12 pixels de preenchimento dentro dos campos de input*/
+                margin-bottom: 10px; /*adiciona uma margem inferior de 10 pixels dentro dos botões*/
+                border: 1px solid #ccc; /*defina uma borda sólida de 1px com borda clara*/
+                border-radius: 6px; /*arredonda os cantos do input com um raio de 6pixels*/
+                font-size: 14px; /*muda o tamanho da fonte*/
+            }
+            /*estilo para as classes btn_1 e btn_2*/
+            .btn_1, .btn_2{
+                width: 100%; /*faz com que os botões ocupem 100% da largura*/
+                padding: 12px; /*adiciona 12pixels de preenchimento dentro dos campos de input*/
+                color: #fff; /*define a cor dos botões de branco*/
+                border: none; /*remove a borda padrão*/
+                border-radius: 6px; /*arredonda os cantos dos botões com um raio de 6 pixels*/
+                font-size: 16px; /*define o tamanho da fonte para o tamanho do botão*/
+                cursor: pointer; /*muda o ponteiro quando o mouse passa por cima do botão*/
+                transition: background-color 0.3s ease; /*adiciona uma transção para mudanças de cor de fundo de 0.3 seg.*/
+                margin-top: 10px; /*adiciona uma margem superior  de 10px acima dos botões*/
+            }
+            /*estilos específicos para btn_1*/
+            .btn_1 {
+                background-color: #4caf50; /*define a cor de fundo d btn1 para verde*/
+            }
+            /*estilo de hover para btn_1*/
+            .btn_1:hover{
+                  background-color: #45A849; /**/
+            }
+        </style>
     </head>
 
     <div class="form-fundo">
@@ -14,7 +86,7 @@
                 <input type="email" id="email" name="email" required/>
 
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" required/>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 91111-9921" required/>
 
                 <label for="cpf">CPF</label>
                 <input type="text" id="cpf" name="cpf" placeholder="00000000000" required/>
@@ -27,6 +99,8 @@
 
                 <button type="submit">Cadastrar</button>
             </form>
+            <br><br>
+            Já possui cadastro? <a href="login.html">Login</a>
         </div>
     </div>
 </html>

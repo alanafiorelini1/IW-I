@@ -1,8 +1,80 @@
 <html>
     <head>
         <title>Login</title>
-    </head>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            html,body {
+                height: 100%;
+                font-family: Arial, sans-serif;
+                background-color: #f0f2f5;
+            }
+            .form-fundo {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .form-login, .form-cadastro {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 400px;
+            }
 
+            h2 {
+               text-align: center;
+               margin-bottom: 25px;
+            }
+
+            label{
+                font-weight: bold;
+                display: block;
+                margin-top: 10px;
+            }
+
+            input{
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 14px;
+            }
+
+            .btn_1, .btn_2{
+                width: 100%;
+                padding: 12px;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                margin-top: 10px;
+            }
+
+            .btn_1{
+                background-color: #4CAF50;
+            }
+            .btn_1:hover{
+                background-color: #45A849;
+            }
+            .btn_2{
+                background-color: #1283f5
+            }
+            .btn_2:hover{
+                background-color: #006ad3;
+            }
+
+        </style>
+    </head>
+<body
     <div class="form-fundo">
         <div class="form-login">
             <h2>Login</h2>
@@ -16,7 +88,8 @@
                 <button type="submit">Entrar</button>
             </form>
             <br> <br>
-            Não possui cadastro? <a href="cadastro.html">cadastrar</a>
+            Não possui cadastro? <a href="cadastro.html">Cadastrar</a>
         </div>
     </div>
+</body>
 </html>
