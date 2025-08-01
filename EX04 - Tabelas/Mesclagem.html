@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            table {
+                border-collapse: collapse;
+                width: 300px;
+            }
+            td {
+                border: 1 px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+            <tr>
+                <td>A</td> <td colspan="2">B</td>
+            </tr> </thead>
+            <tbody>
+            <tr>
+                <td rowspan="3">C</td> <td>D</td> <td rowspan="2">E</td>
+            </tr>
+            <tr>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td colspan="2">G</td>
+            </tr>
+          </tbody>
+        </table>
+    </body>
+</html>
